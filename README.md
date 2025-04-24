@@ -11,8 +11,8 @@ A sleek and modern restaurant web application built using React. This app showca
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, React Router, Tailwind CSS (or other)
-- **State Management:** useState, useContext (or Redux if applicable)
+- Frontend: React, React Router, Tailwind CSS (or other)
+- State Management: useState, useContext  
 
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/699cf6be-dee8-40ad-96e2-51f5a62b266f)
