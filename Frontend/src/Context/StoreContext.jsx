@@ -7,6 +7,8 @@ const StoreContextProvider = (props) => {
 
 
     const[cartItem,setCartItem] = useState({});
+    const url = "http://localhost:4000";
+    const[token,setToken] = useState("");
 
     const addToCart = (itemId)=>{
         if(!cartItem[itemId]){
@@ -25,12 +27,21 @@ const StoreContextProvider = (props) => {
         console.log(cartItem);
     },[cartItem])
 
+    useEffect(()=>{
+        if (localStorage.getItem("token")) {
+            setToken(localStorage.getItem("token"))   // this will used to stay logged in even if the webpage is reloaded
+        }
+    },[])
+
     const contextValue = {
         food_list,
         cartItem,
         setCartItem,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        url,
+        token,
+        setToken
     }
     return (
         <StoreContext.Provider value={contextValue}>
