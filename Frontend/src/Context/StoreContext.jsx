@@ -1,5 +1,7 @@
 import { createContext, useEffect, useState } from "react";
-import { food_list } from "../assets/assets";
+// import { food_list } from "../assets/assets";
+import axios from 'axios';
+
 
 export const StoreContext = createContext(null)
 
@@ -9,6 +11,7 @@ const StoreContextProvider = (props) => {
     const[cartItem,setCartItem] = useState({});
     const url = "http://localhost:4000";
     const[token,setToken] = useState("");
+    const[food_list,setFoodlist] = useState([]);
 
     const addToCart = (itemId)=>{
         if(!cartItem[itemId]){
@@ -23,14 +26,32 @@ const StoreContextProvider = (props) => {
         setCartItem((prev)=>({...prev , [itemId] : prev[itemId]-1}))
     }
 
-    useEffect(()=>{
-        console.log(cartItem);
-    },[cartItem])
+    const getTotalCartAmount = ()=>{
+        let totalAmount = 0;
+        for(const item in cartItem){
+            if (cartItem[item] > 0) {
+                let itemInfo = food_list.find((product) => product._id === item);
+                totalAmount += itemInfo.price * cartItem[item];
+            }
+        }
+        return totalAmount;
+    }
+
+
+    const fetchFoodList = async()=>{
+        const response = await axios.get(url+"/api/food/list");
+        setFoodlist(response.data.data);
+    }
+
 
     useEffect(()=>{
-        if (localStorage.getItem("token")) {
+        async function loadData() {
+            await fetchFoodList();
+            if (localStorage.getItem("token")) {
             setToken(localStorage.getItem("token"))   // this will used to stay logged in even if the webpage is reloaded
         }
+        }
+        loadData();
     },[])
 
     const contextValue = {
@@ -39,6 +60,7 @@ const StoreContextProvider = (props) => {
         setCartItem,
         addToCart,
         removeFromCart,
+        getTotalCartAmount,
         url,
         token,
         setToken

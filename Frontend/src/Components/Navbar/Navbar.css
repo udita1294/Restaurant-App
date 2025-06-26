@@ -70,6 +70,17 @@
 .nav-profile-dropdown li:hover{
     color: #B11226;
 }
+
+/* .dot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+} */
+
 @media (max-width:1050px){
     .navbar .logo{
         width: 140px;
