@@ -3,6 +3,7 @@ const cors = require('cors');
 const connectDB = require('./config/db.js'); 
 const foodRouter = require('./routes/foodRoute.js');
 const userRouter = require('./routes/userRoute.js');
+const cartRouter = require('./routes/cartRoute.js');
 require('dotenv').config();
 
 
@@ -19,6 +20,9 @@ connectDB();
 app.use("/api/food",foodRouter);
 app.use("/images" , express.static('uploads'))  // THE UPLOADS FOLDER WILL BE EXPOSED ON THIS ENDPOINT
 app.use("/api/user" , userRouter);
+app.use("/api/cart",cartRouter);
+
+
 app.get('/' , function(req,res){
     res.send("api running");
 })
