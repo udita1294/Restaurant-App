@@ -1,18 +1,31 @@
-# 🍽️ Restaurant App
+🍽️ Restaurant App
+A responsive and user-friendly Restaurant Web Application where users can browse the menu, add items to the cart, and place orders. This project is built with modern web development tools and follows clean UI/UX practices.
 
-A sleek and modern restaurant web application built using React. This app showcases a menu, allows users to place orders.
 
-## 🚀 Features
+🛠️ Tech Stack
+Frontend: React.js
 
-- 🧾 Interactive digital menu with categories and search
-- ⭐ Customer reviews and ratings
-- ⚛️ Built with React and styled using  CSS 
-- 🔐  user authentication (login/signup)
+Styling: Tailwind CSS 
 
-## 🛠️ Tech Stack
+State Management: Context API
 
-- Frontend: React, React Router, Tailwind CSS (or other)
-- State Management: useState, useContext  
+Backend: Node.js + Express 
+
+Database: MongoDB 
+
+Deployment: Vercel 
+
+✨ Features
+✅ Responsive design for all devices
+✅ Interactive menu display
+✅ Add to Cart functionality
+✅ Cart quantity management
+✅ Order summary & confirmation 
+✅ Search and filter menu items 
+✅ Admin panel to manage menu 
+✅ Modern and clean UI
+
+
 
 ## 📸 Screenshots
 ![image](https://github.com/user-attachments/assets/2a745789-a605-4885-abbb-2be287ce2b3b)
@@ -20,6 +33,10 @@ A sleek and modern restaurant web application built using React. This app showca
 ![image](https://github.com/user-attachments/assets/ee605768-0e6a-4fab-a2c3-688459c365ed)
 ![image](https://github.com/user-attachments/assets/302745ce-e166-4686-b027-67690fbc5a74)
 ![image](https://github.com/user-attachments/assets/83b83655-ba23-4a38-818b-bcceb7cd3b2f)
+![Screenshot 2025-07-06 133802](https://github.com/user-attachments/assets/8cf1659c-23ad-40d8-ad69-87c6a8926974)
+![Screenshot 2025-07-06 133859](https://github.com/user-attachments/assets/0758f13b-05a9-4449-96e5-71878cd86474)
+![image](https://github.com/user-attachments/assets/de2be629-cbc0-4fcf-9caa-11734bc497f6)
+
 
 
 
