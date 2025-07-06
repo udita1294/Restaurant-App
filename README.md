@@ -1,10 +1,10 @@
-🍽️ Restaurant App
+## 🍽️ Restaurant App
 
 
 A responsive and user-friendly Restaurant Web Application where users can browse the menu, add items to the cart, and place orders. This project is built with modern web development tools and follows clean UI/UX practices.
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Frontend: React.js
 Styling: Tailwind CSS 
@@ -13,7 +13,7 @@ Backend: Node.js + Express
 Database: MongoDB 
 
 
-✨ Features
+## ✨ Features
 ✅ Responsive design for all devices
 ✅ Interactive menu display
 ✅ Add to Cart functionality
@@ -21,6 +21,8 @@ Database: MongoDB
 ✅ Order summary & confirmation 
 ✅ Search and filter menu items 
 ✅ Admin panel to manage menu 
+✅ Add user authentication
+✅ Admin dashboard for managing menu & orders
 ✅ Modern and clean UI
 
 
@@ -40,6 +42,11 @@ Database: MongoDB
 ![Screenshot 2025-07-06 134726](https://github.com/user-attachments/assets/93c857dd-e605-43db-87e0-9e2481c68e49)
 ![image](https://github.com/user-attachments/assets/b5bcd97c-98a1-4e5e-9e00-cc29fddf6c66)
 
+
+## 📦 Future Enhancements (Planned)
+✅ Payment gateway integration
+✅ Order tracking system
+✅ Customer reviews & ratings
 
 
 
