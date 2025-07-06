@@ -7,9 +7,13 @@ A responsive and user-friendly Restaurant Web Application where users can browse
 ## 🛠️ Tech Stack
 
 Frontend: React.js
+
 Styling: Tailwind CSS 
+
 State Management: Context API
+
 Backend: Node.js + Express 
+
 Database: MongoDB 
 
 
@@ -54,7 +58,9 @@ Database: MongoDB
 
 ## 📦 Future Enhancements (Planned)
 ✅ Payment gateway integration
+
 ✅ Order tracking system
+
 ✅ Customer reviews & ratings
 
 
