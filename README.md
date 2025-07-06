@@ -15,14 +15,23 @@ Database: MongoDB
 
 ## ✨ Features
 ✅ Responsive design for all devices
+
 ✅ Interactive menu display
+
 ✅ Add to Cart functionality
+
 ✅ Cart quantity management
+
 ✅ Order summary & confirmation 
+
 ✅ Search and filter menu items 
+
 ✅ Admin panel to manage menu 
+
 ✅ Add user authentication
+
 ✅ Admin dashboard for managing menu & orders
+
 ✅ Modern and clean UI
 
 
