@@ -28,4 +28,4 @@ app.get('/' , function(req,res){
     res.send("api running");
 })
 
-app.listen(4000 , ()=> console.log("server working on http://localhost:4000"))
+app.listen(port , ()=> console.log("server working on http://localhost:4000"))
